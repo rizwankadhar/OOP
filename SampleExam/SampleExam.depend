@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1590848841 source:c:\users\elitebook\documents\oop\sampleexam\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/linsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/maxsearch.hpp"
+	"library/summation.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\sampleexam\library\enumerator.hpp
+
+1555578898 c:\users\elitebook\documents\oop\sampleexam\library\linsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\sampleexam\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1535999580 c:\users\elitebook\documents\oop\sampleexam\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\sampleexam\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1547549200 c:\users\elitebook\documents\oop\sampleexam\library\maxsearch.hpp
+	"procedure.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\sampleexam\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+

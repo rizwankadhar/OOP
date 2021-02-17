@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1591655629 source:c:\users\elitebook\documents\oop\numberrepetition\main.cpp
+	<iostream>
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+	"library/counting.hpp"
+	"library/enumerator.hpp"
+	"library/maxsearch.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\numberrepetition\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\numberrepetition\library\enumerator.hpp
+
+1588076210 c:\users\elitebook\documents\oop\numberrepetition\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\numberrepetition\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1537811350 c:\users\elitebook\documents\oop\numberrepetition\library\counting.hpp
+	"summation.hpp"
+
+1547549200 c:\users\elitebook\documents\oop\numberrepetition\library\maxsearch.hpp
+	"procedure.hpp"
+

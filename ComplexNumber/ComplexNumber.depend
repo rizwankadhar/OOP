@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1583276351 source:c:\users\elitebook\documents\oop\complexnumber\main.cpp
+	<iostream>
+	"Complex.h"
+
+1583274065 c:\users\elitebook\documents\oop\complexnumber\complex.h
+	<iostream>
+
+1583242085 source:c:\users\elitebook\documents\oop\complexnumber\complex.cpp
+	"Complex.h"
+

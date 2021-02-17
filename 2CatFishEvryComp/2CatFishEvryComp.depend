@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1591917085 source:c:\users\elitebook\documents\oop\2catfishevrycomp\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/counting.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+	"library/linsearch.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\2catfishevrycomp\library\enumerator.hpp
+
+1537811350 c:\users\elitebook\documents\oop\2catfishevrycomp\library\counting.hpp
+	"summation.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\2catfishevrycomp\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\2catfishevrycomp\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1535999580 c:\users\elitebook\documents\oop\2catfishevrycomp\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\2catfishevrycomp\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1555578898 c:\users\elitebook\documents\oop\2catfishevrycomp\library\linsearch.hpp
+	"procedure.hpp"
+

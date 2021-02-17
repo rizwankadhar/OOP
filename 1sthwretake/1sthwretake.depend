@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1592863718 source:/home/jamala/Documents/oop/1sthwretake/main.cpp
+	<iostream>
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/linsearch.hpp"
+
+1535995980 /home/jamala/Documents/oop/1sthwretake/library/seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502810830 /home/jamala/Documents/oop/1sthwretake/library/enumerator.hpp
+
+1587719238 /home/jamala/Documents/oop/1sthwretake/library/summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555648484 /home/jamala/Documents/oop/1sthwretake/library/procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1554933624 /home/jamala/Documents/oop/1sthwretake/library/stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1555575298 /home/jamala/Documents/oop/1sthwretake/library/linsearch.hpp
+	"procedure.hpp"
+
+1593548497 source:c:\users\elitebook\documents\oop\1sthwretake\main.cpp
+	<iostream>
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/linsearch.hpp"
+	"library/enumerator.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\1sthwretake\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\1sthwretake\library\enumerator.hpp
+
+1587722838 c:\users\elitebook\documents\oop\1sthwretake\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\1sthwretake\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1554937224 c:\users\elitebook\documents\oop\1sthwretake\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1555578898 c:\users\elitebook\documents\oop\1sthwretake\library\linsearch.hpp
+	"procedure.hpp"
+

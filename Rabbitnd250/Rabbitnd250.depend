@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1591724644 source:c:\users\elitebook\documents\oop\rabbitnd250\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/counting.hpp"
+	"library/linsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\rabbitnd250\library\enumerator.hpp
+
+1537811350 c:\users\elitebook\documents\oop\rabbitnd250\library\counting.hpp
+	"summation.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\rabbitnd250\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\rabbitnd250\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1555578898 c:\users\elitebook\documents\oop\rabbitnd250\library\linsearch.hpp
+	"procedure.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\rabbitnd250\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1591960326 source:c:\users\elitebook\documents\oop\longestisland\main.cpp
+	<iostream>
+	"library/selection.hpp"
+	"library/counting.hpp"
+	"library/maxsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/enumerator.hpp"
+
+1536086406 c:\users\elitebook\documents\oop\longestisland\library\selection.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\longestisland\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\longestisland\library\enumerator.hpp
+
+1537811350 c:\users\elitebook\documents\oop\longestisland\library\counting.hpp
+	"summation.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\longestisland\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1547549200 c:\users\elitebook\documents\oop\longestisland\library\maxsearch.hpp
+	"procedure.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\longestisland\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

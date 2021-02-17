@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1590931695 source:c:\users\elitebook\documents\oop\beststudentavg\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/maxsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+	"library/stringstreamenumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\beststudentavg\library\enumerator.hpp
+
+1547549200 c:\users\elitebook\documents\oop\beststudentavg\library\maxsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\beststudentavg\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1535999580 c:\users\elitebook\documents\oop\beststudentavg\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\beststudentavg\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1554937224 c:\users\elitebook\documents\oop\beststudentavg\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

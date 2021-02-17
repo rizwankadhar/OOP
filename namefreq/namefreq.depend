@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1589838543 source:c:\users\elitebook\documents\oop\namefreq\main.cpp
+	<iostream>
+	"library/seqinfileenumerator.hpp"
+	"library/maxsearch.hpp"
+	"library/counting.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\namefreq\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\namefreq\library\enumerator.hpp
+
+1547549200 c:\users\elitebook\documents\oop\namefreq\library\maxsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\namefreq\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1537811350 c:\users\elitebook\documents\oop\namefreq\library\counting.hpp
+	"summation.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\namefreq\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1536086406 c:\users\elitebook\documents\oop\namefreq\library\selection.hpp
+	"procedure.hpp"
+

@@ -1,0 +1,68 @@
+# depslib dependency file v1.0
+1586962008 source:c:\teri\elte\oktatás\oep\9\atm\atm.cpp
+	"atm.h"
+	"customer.h"
+	"center.h"
+
+1587119640 c:\teri\elte\oktatás\oep\9\atm\atm.h
+	"card.h"
+
+1587117842 c:\teri\elte\oktatás\oep\9\atm\card.h
+	<string>
+	<vector>
+
+1587119345 c:\teri\elte\oktatás\oep\9\atm\customer.h
+	"atm.h"
+
+1587118964 c:\teri\elte\oktatás\oep\9\atm\center.h
+	"bank.h"
+
+1587118429 c:\teri\elte\oktatás\oep\9\atm\bank.h
+	"account.h"
+
+1587118019 c:\teri\elte\oktatás\oep\9\atm\account.h
+	"card.h"
+
+1586961957 source:c:\teri\elte\oktatás\oep\9\atm\main.cpp
+	<fstream>
+	<sstream>
+	"customer.h"
+	"center.h"
+
+1586961944 source:c:\teri\elte\oktatás\oep\9\atm\bank.cpp
+	"bank.h"
+
+1587120360 source:c:\users\elitebook\documents\oop\atm\atm.cpp
+	"atm.h"
+	"customer.h"
+	"center.h"
+
+1587119642 c:\users\elitebook\documents\oop\atm\atm.h
+	"card.h"
+
+1587117844 c:\users\elitebook\documents\oop\atm\card.h
+	<string>
+	<vector>
+
+1587119346 c:\users\elitebook\documents\oop\atm\customer.h
+	"atm.h"
+
+1587118966 c:\users\elitebook\documents\oop\atm\center.h
+	"bank.h"
+
+1587118430 c:\users\elitebook\documents\oop\atm\bank.h
+	"account.h"
+
+1587118020 c:\users\elitebook\documents\oop\atm\account.h
+	"card.h"
+
+1586961946 source:c:\users\elitebook\documents\oop\atm\bank.cpp
+	"bank.h"
+
+1587120132 source:c:\users\elitebook\documents\oop\atm\main.cpp
+	<fstream>
+	<sstream>
+	<iostream>
+	"customer.h"
+	"center.h"
+

@@ -1,0 +1,6 @@
+Rizwan Fish 10 1
+Rizwan Melon 10 2
+Rizwan Spinach 9 1
+Ditta Chicken 8 2
+Ditta Mutton 20 1
+Hussain Potato 5 3

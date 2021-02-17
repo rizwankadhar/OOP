@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1582670029 source:c:\users\elitebook\documents\oop\fileopen\main.cpp
+	<iostream>
+	<fstream>
+

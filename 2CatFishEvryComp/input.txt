@@ -1,0 +1,10 @@
+PETER LAC0512 carp 45 carp 53 catfish 96
+PETER1 LAC0512 carp 45 carp 53 catfish 96 catfish 96
+PETER1 LAC0512 carp 45 catfish 96 carp 53 catfish 96
+PETER2 LAC0512 carp 45 carp 53 catfish 96
+PETER3 LAC0512 catfish 96 carp 45 carp 53 catfish 96 catfish 96
+PETER3 LAC0512 carp 45 catfish 96 carp 53 catfish 96
+PETER4 LAC0512 carp 45 carp 53
+PETER5 LAC0512 carp 45 catfish 96 carp 53 catfish 96
+PETER6 LAC0512 carp 45 carp 53 catfish 96
+PETER7 LAC0512 catfish 96 carp 45 carp 53 catfish 96

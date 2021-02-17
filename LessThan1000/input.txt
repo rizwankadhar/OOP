@@ -1,0 +1,5 @@
+acc1 2Jan 1000
+acc1 4Jav -3000
+acc2 2Jan 2000
+acc3 8Jab 4000
+acc3 9Jan -9000

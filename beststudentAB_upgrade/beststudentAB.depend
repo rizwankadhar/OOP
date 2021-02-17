@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1588715160 source:c:\users\elitebook\documents\oop\beststudentab_upgrade\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/linsearch.hpp"
+	"library/maxsearch.hpp"
+	"library/counting.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\enumerator.hpp
+
+1555578898 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\linsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1547549200 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\maxsearch.hpp
+	"procedure.hpp"
+
+1537811350 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\counting.hpp
+	"summation.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1535999580 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\beststudentab_upgrade\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

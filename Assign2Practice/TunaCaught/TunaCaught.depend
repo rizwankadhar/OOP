@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1591810702 source:c:\users\elitebook\documents\oop\assign2practice\tunacaught\main.cpp
+	<iostream>
+	<vector>
+	"library/enumerator.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+	"library/linsearch.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\enumerator.hpp
+
+1535999580 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1555578898 c:\users\elitebook\documents\oop\assign2practice\tunacaught\library\linsearch.hpp
+	"procedure.hpp"
+

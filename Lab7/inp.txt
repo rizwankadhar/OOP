@@ -1,0 +1,5 @@
+Ali rabbit 2
+Hammad deer 50
+Hammad bear 100
+Hassan jackal 100
+Hassan deer 68

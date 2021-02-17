@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1590881249 source:c:\users\elitebook\documents\oop\biggesttheeta\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/counting.hpp"
+	"library/maxsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\biggesttheeta\library\enumerator.hpp
+
+1537811350 c:\users\elitebook\documents\oop\biggesttheeta\library\counting.hpp
+	"summation.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\biggesttheeta\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\biggesttheeta\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1547549200 c:\users\elitebook\documents\oop\biggesttheeta\library\maxsearch.hpp
+	"procedure.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\biggesttheeta\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

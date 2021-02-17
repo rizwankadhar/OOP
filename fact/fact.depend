@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1588693798 source:c:\users\elitebook\documents\oop\fact\main.cpp
+	<iostream>
+	<cmath>
+	"library/summation.hpp"
+	"library/intervalenumerator.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\fact\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\fact\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\fact\library\enumerator.hpp
+
+1536086078 c:\users\elitebook\documents\oop\fact\library\intervalenumerator.hpp
+	"enumerator.hpp"
+

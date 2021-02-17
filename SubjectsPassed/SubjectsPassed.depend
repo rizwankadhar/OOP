@@ -1,0 +1,42 @@
+# depslib dependency file v1.0
+1591962830 source:c:\users\elitebook\documents\oop\subjectspassed\main.cpp
+	<iostream>
+	"library/counting.hpp"
+	"library/enumerator.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/linsearch.hpp"
+	"library/maxsearch.hpp"
+
+1537811350 c:\users\elitebook\documents\oop\subjectspassed\library\counting.hpp
+	"summation.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\subjectspassed\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\subjectspassed\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\subjectspassed\library\enumerator.hpp
+
+1535999580 c:\users\elitebook\documents\oop\subjectspassed\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\subjectspassed\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1555578898 c:\users\elitebook\documents\oop\subjectspassed\library\linsearch.hpp
+	"procedure.hpp"
+
+1547549200 c:\users\elitebook\documents\oop\subjectspassed\library\maxsearch.hpp
+	"procedure.hpp"
+

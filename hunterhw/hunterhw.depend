@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1588684458 source:c:\users\elitebook\documents\oop\hunterhw\hunter.cpp
+	"Hunter.h"
+
+1588715714 c:\users\elitebook\documents\oop\hunterhw\hunter.h
+	"Trophy.h"
+	<vector>
+
+1588715537 source:c:\users\elitebook\documents\oop\hunterhw\main.cpp
+	<iostream>
+	"Hunter.h"
+
+1588715610 c:\users\elitebook\documents\oop\hunterhw\trophy.h
+	<string>
+
+1588704993 source:c:\users\elitebook\documents\oop\hunterhw\trophy.cpp
+

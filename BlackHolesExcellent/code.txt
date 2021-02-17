@@ -1,0 +1,167 @@
+#include <iostream>
+#include "library/enumerator.hpp"
+#include "library/maxsearch.hpp"
+#include "library/seqinfileenumerator.hpp"
+#include "library/stringstreamenumerator.hpp"
+#include "library/summation.hpp"
+/*
+Data of blackholes are stored in a text file. A
+measurement consists of a date (YYYY.MM.DD format, string), the weight (in billion tonns, int) and
+the distance from the Earth (in thousand light year, int). In one line, data is separated by tabs or
+whitespace. The
+dates in one line are in ascending order. The weight of one blackhole increases by time.
+Several
+stations can make measurements of the same blackhole; thus, the lines of the file consist of the
+followings: blackhole ID, station ID, measurements. Like this, measurements of one blackhole can be
+present in more than one line, but measurements of one station of one blackhole can be found in only
+one line. The file is ordered by blackhole ID
+CX896 SOYUZ 1978.09.22 6000 3000 1999.04.17 8500 2500 2003.11.03 9800 2800
+CX896 NASA 1984.03.12 6000 3000 2003.11.23 8500 2500
+SH231 SOYUZ 1986.10.17 6000 3000 2003.04.17 8500 2500 2008.11.03 9800 2800
+
+List the average weight of those blackholes that were measured to be closer than 2700 thousand
+light years by every station (that has made measurements of that blackhole) at least once. Average
+weight is calculated from the last measured weights made by the stations.
+*/
+using namespace std;
+
+
+struct Measurement{
+    string date;
+    int weight;
+    int distance;
+    friend istream &operator>>(istream &is,Measurement &m)
+    {
+        is >>m.date >> m.weight >> m.distance;
+        return is;
+    }
+};
+
+struct oneLine{
+    bool closer;
+    int weight;
+    oneLine() : closer(false), weight(0) { }
+    oneLine(bool cl,int w) : closer(cl),weight(w) { }
+};
+class sumALine : public Summation<Measurement,oneLine>
+{
+    oneLine func(const Measurement& e) const override { return oneLine(e.distance < 2700,e.weight);}
+    oneLine neutral() const override { return oneLine();}
+    oneLine add( const oneLine& a, const oneLine& b) const override { return oneLine(a.closer || b.closer,b.weight);}
+};
+
+struct BlackHole1Line{
+    string ID;
+    string station;
+    bool isNear;
+    int lastWeight;
+    friend istream &operator>>(istream &is,BlackHole1Line &bh);
+};
+istream &operator>>(istream &is,BlackHole1Line &bh)
+{
+    string line;
+    getline(is,line,'\n');
+    stringstream ss(line);
+    ss >> bh.ID >> bh.station;
+    StringStreamEnumerator<Measurement> ssenor(ss);
+    sumALine pr;
+    pr.addEnumerator(&ssenor);
+    pr.run();
+    bh.isNear = pr.result().closer;
+    bh.lastWeight = pr.result().weight;
+    cout <<bh.ID<< " " <<bh.station <<" "<<bh.isNear << " " <<bh.lastWeight<<endl;
+    return is;
+}
+
+struct BlackHole{
+    string b_Hole;
+    bool isClose;
+    int last_weight;
+    int noOfStations;
+    BlackHole() : b_Hole("") , isClose(true), last_weight(0), noOfStations(0) { }
+    BlackHole(string bh,bool close,int last,int nS) : b_Hole(bh), isClose(close), last_weight(last), noOfStations(nS) { }
+};
+
+class oneBlackHoleData : public Summation<BlackHole1Line,BlackHole>
+{
+private:
+    string _id;
+public:
+    oneBlackHoleData(const string &id) : _id(id) {}
+protected:
+    BlackHole func(const BlackHole1Line& e) const override { return BlackHole(e.ID,e.isNear,e.lastWeight,1);}
+    BlackHole neutral() const override { return BlackHole();}
+    BlackHole add( const BlackHole& a, const BlackHole& b) const override
+    {
+        return BlackHole(b.b_Hole,a.isClose && b.isClose,a.last_weight+b.last_weight,a.noOfStations + b.noOfStations);
+    }
+    bool whileCond(const BlackHole1Line &e) const override { return e.ID == _id;}
+    void first() override { }
+};
+/*
+struct AvgForBH{
+    string blackH;
+    bool closerAll;
+    double avg_weight;
+};
+*/
+class BlackHoleEnor : public Enumerator<BlackHole>
+{
+private:
+    SeqInFileEnumerator<BlackHole1Line>* _f;
+    BlackHole _bHole;
+    bool _end;
+    bool _empty;
+public:
+    BlackHoleEnor(const string &fname) : _empty(true) { _f = new SeqInFileEnumerator<BlackHole1Line>(fname);}
+    void first() override { _f->first(); next(); if (!end()) _empty=false;}
+    void next() override;
+    bool end() const override { return _end;}
+    BlackHole current() const override { return _bHole;}
+    bool isEmpty() const {return _empty;}
+    ~BlackHoleEnor() { delete _f;}
+};
+
+void BlackHoleEnor::next()
+{
+    if (_end = _f->end() ) return;
+    _bHole.b_Hole = _f->current().ID;
+    oneBlackHoleData pr(_bHole.b_Hole);
+    pr.addEnumerator(_f);
+    pr.run();
+    _bHole = pr.result();
+    /*_bHole.closerAll = pr.result().isClose;
+    if (pr.result().noOfStations > 0)
+    {
+        _bHole.avg_weight = double(pr.result().last_weight)/pr.result().noOfStations;
+    }
+    else
+    {
+        _bHole.avg_weight = 0.0;
+    }*/
+   // cout <<_bHole.blackH <<" "<<_bHole.closerAll << " " <<_bHole.avg_weight<<endl;
+}
+
+class WriteOutPut : public Summation<BlackHole,ostream>
+{
+public:
+    WriteOutPut(ostream *o) : Summation<BlackHole,ostream> (o) {}
+protected:
+    string func(const BlackHole& e) const override
+    {
+        ///cout <<e.blackH <<" " <<e.avg_weight<<"\n";
+        ostringstream oss(e.b_Hole);
+        oss <<e.b_Hole <<" " <<e.last_weight<<"\n";
+    }
+    bool cond(const BlackHole& e) const override { return e.isClose; }
+};
+
+int main()
+{
+    WriteOutPut pr(&cout);
+    BlackHoleEnor enor("input.txt");
+    pr.addEnumerator(&enor);
+    pr.run();
+    return 0;
+}
+

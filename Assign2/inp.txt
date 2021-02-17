@@ -1,0 +1,9 @@
+Hussain SummerChampionship Sardine 50 Tuna 80
+Rizwan BigLakeChampionship Tuna 50 Salmon 20 Tuna 78 Sardine 5 Tuna 100
+Rizwan BLChamp Salmon 40 Sardine 10 Tuna 90 Salmon 30 Tuna 90
+Ahtisham BLChamp Salmon 40 Sardine 10 Tuna 90 Salmon 30 Tuna 50
+Ahtisham SpringFest Sardine 8 Tuna 70
+Ahtisham BigLakeChampionship Tuna 80
+Ahmad SummerChampionship Salmon 50
+
+

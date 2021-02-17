@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1582714781 source:c:\users\elitebook\documents\oop\pointcircle\circle.cpp
+	"Circle.h"
+
+1582714773 c:\users\elitebook\documents\oop\pointcircle\circle.h
+	"Point.h"
+	<math.h>
+
+1583186661 c:\users\elitebook\documents\oop\pointcircle\point.h
+	<iostream>
+
+1582802925 source:c:\users\elitebook\documents\oop\pointcircle\main.cpp
+	<iostream>
+	"Circle.h"
+	<vector>
+	<stdlib.h>
+	<fstream>
+
+1582112134 source:c:\users\elitebook\documents\oop\pointcircle\point.cpp
+	"Point.h"
+

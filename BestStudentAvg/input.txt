@@ -1,0 +1,4 @@
+Karcsi 5 2 3
+Irma 5 5 1 5 5 5 5 5 5
+Lajos 2 3 4 1 3
+

@@ -1,0 +1,13 @@
+#pragma once
+
+class Product
+{
+    public:
+        Product();
+        ~Product();
+
+    protected:
+
+    private:
+};
+

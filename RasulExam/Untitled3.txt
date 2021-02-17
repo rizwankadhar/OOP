@@ -1,0 +1,233 @@
+#include <iostream>
+#include "library/enumerator.hpp"
+#include "library/linsearch.hpp"
+#include "library/seqinfileenumerator.hpp"
+#include "library/stringstreamenumerator.hpp"
+#include "library/summation.hpp"
+#include "library/procedure.hpp"
+/*
+To produce statistics about the competition, varius data is stored in a text file.
+One line of the file contains the year of the competition (an integer), the identifier
+of the competition (single word without spaces), then the data about the problems as
+(programming language, number of correct problems) pairs. The programming language is
+a word without spaces. The number of correct problems written in that programming language
+is an integer. The file is ordered according to the year of the competition. The data in a
+line are separated by spaces. You can assume that the file is correct. An example line of
+the file (the data of the 2020 Hungarian ACM national programming competition):
+2020 HACM Pascal 42 Java 38 C++ 82 Haskell 76 Python 12
+
+Give a year where for each competition in that year, at most 3 correct solutions were obtained
+in Fortran (0 solutions is also possible and satisfies the condition).
+*/
+/*
+using namespace std;
+
+
+struct Language{
+    string name;
+    int correct;
+    friend istream &operator>>(istream &is, Language &l)
+    {
+        is >> l.name >> l.correct;
+        return is;
+    }
+};
+
+class FortranCheck : public LinSearch<Language,true>
+{
+    bool cond(const Language &e) const override { return e.name != "Fortran" || (e.name == "Fortran" && e.correct <= 3);}
+};
+struct oneLine{
+    int year;
+    string comp;
+    bool atMost3;
+    friend istream &operator>>(istream &is, oneLine &l);
+};
+istream &operator>>(istream &is, oneLine &l)
+{
+    string line;
+    getline(is,line,'\n');
+    stringstream ss(line);
+    ss >>l.year >>l.comp;
+    StringStreamEnumerator<Language> ssenor(ss);
+    FortranCheck pr;
+    pr.addEnumerator(&ssenor);
+    pr.run();
+    l.atMost3 = pr.found();
+    return is;
+}
+struct Year{
+    int number;
+    bool isAll3;
+    Year() : number(0), isAll3(true) {}
+    Year(int num, bool all): number(num), isAll3(all) {}
+};
+class atMost3All : public Summation<oneLine,Year>
+{
+private:
+    int _num;
+public:
+    atMost3All(const int &num) : _num(num) {}
+protected:
+    Year func(const oneLine& e) const override { return Year(e.year,e.atMost3);}
+    Year neutral() const override { return Year();}
+    Year add( const Year& a, const Year& b) const override { return Year(b.year,a.isAll3 && b.isAll3) }
+    bool whileCond(const oneLine &e) const override { return e.year == _num;}
+    void first() override { }
+};
+
+class YearEnumerator : public Enumerator<Year>
+{
+private:
+    YearEnumerator<oneLine>* _f;
+    Year _curr;
+    bool _end;
+    bool _empty;
+public:
+    YearEnumerator(const string &fname) : _empty(true) { _f = new SeqInFileEnumerator<oneLine>(fname);}
+    void first() override { _f->first(); next();  if (!end()) _empty = false;}
+    void next() override;
+    bool end() const override { return _end;}
+    Year current() const override { return _school;}
+    bool isEmpty() const { return _empty;}
+    ~YearEnumerator() { delete _f;}
+};
+void YearEnumerator::next()
+{
+
+}
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
+*/
+using namespace std;
+
+struct Problem{
+    string name;
+    int correct;
+    friend istream& operator>>(istream &is, Problem &p){
+        is >> p.name >> p.correct;
+        return is;
+    }
+};
+/*
+struct LineOfProblems{
+    bool isThereFortran;
+    bool atMost3;
+    LineOfProblems() : isThereFortran(true), atMost3(true) { }
+    LineOfProblems(bool i, bool a) : isThereFortran(i), atMost3(a) { }
+};
+
+class isFortranWith31 : public Summation<Problem>{
+    Genre func(const Line &f) const override{return Genre(f.genre,f.indoors);}
+    Genre add(const Genre &a,const Genre &b)const override{return Genre(b.name,a.indoors+b.indoors);}
+    Genre neutral()const override{return Genre();}
+    bool cond(const Problem &p) const override {return (p.name=="Fortran" && p.correct <=3);}
+};
+*/
+class isFortranWith3 : public LinSearch<Problem,true>{
+    bool cond(const Problem &p) const override {return (p.name != "Fortran" ) || (p.name=="Fortran" && p.correct <=3);}
+};
+
+struct Line{
+    string year;
+    string competition;
+    bool isThere;
+    friend istream& operator>>(istream &is, Line &l){
+        string ln;
+        getline(is,ln);
+        stringstream ss(ln);
+        ss >> l.year;
+        ss >> l.competition;
+        StringStreamEnumerator<Problem> enor(ss);
+        isFortranWith3 br;
+        br.addEnumerator(&enor);
+        br.run();
+        l.isThere = br.found();
+        return is;
+    }
+};
+
+class Searching : public LinSearch<Line,true>{
+private:
+    string _name;
+public:
+    Searching(const string &fname) : _name(fname) { }
+protected:
+    bool whileCond(const Line &l) const override { return l.year == _name ;}
+    bool cond(const Line &l)const override {return l.isThere;}
+    void first()override {}
+};
+
+struct Year{
+    string year;
+    bool isThere;
+};
+
+class CompetitonEnumerator : public Enumerator<Year>{
+private:
+    SeqInFileEnumerator<Line>* _f;
+    Year _year;
+    bool _end;
+    bool _empty;
+public:
+    CompetitonEnumerator(const string &fname) : _empty(true) { _f = new SeqInFileEnumerator<Line>(fname);}
+    ~CompetitonEnumerator(){delete _f;}
+    void first() override {_f->first();  next();  if (!end()) _empty = false; }
+    void next() override;
+    bool end() const override {return _end;}
+    bool isEmpty() const { return _empty;}
+    Year current()const override {return _year;}
+};
+
+void CompetitonEnumerator::next(){
+    if(_f->end()){
+        _end = true;
+    }
+    else{
+        _end = false;
+        _year.year = _f->current().year;
+        Searching pr(_year.year);
+        pr.addEnumerator(_f);
+        pr.run();
+        _year.isThere = pr.found();
+    }
+}
+
+class Finding : public LinSearch<Year>{
+    bool cond(const Year &y)const override {return y.isThere;}
+};
+
+/// 2020 HACM Pascal 42 Java 38 C++ 82 Haskell 76 Python 12
+
+int main(int argc,char** argv){
+     try{
+        string filename;
+        if (argc > 1)
+            filename = argv[1];
+        else
+            filename = "test3.txt";
+
+        CompetitonEnumerator enor(filename);
+        Finding pr;
+        pr.addEnumerator(&enor);
+        pr.run();
+
+        if (enor.isEmpty()){
+            cout <<"There is no competition in the file!\n";
+        }
+        else if (pr.found()){
+            cout << " " << pr.elem().year <<"\n";
+        }
+        else{
+            cout <<" There is no such year\n";
+        }
+    }catch(SeqInFileEnumerator<Line>::Exceptions e){
+        cout <<"File not found!";
+        return 1;
+    }
+    return 0;
+}
+

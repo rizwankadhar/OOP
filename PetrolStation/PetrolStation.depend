@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1587298348 source:c:\users\elitebook\documents\oop\petrolstation\cash_desk.cpp
+	"Cash_Desk.h"
+
+1587419604 c:\users\elitebook\documents\oop\petrolstation\cash_desk.h
+	"PetrolPump.h"
+	"Driver.h"
+
+1587422602 c:\users\elitebook\documents\oop\petrolstation\petrolpump.h
+	<vector>
+	<iostream>
+
+1587419679 c:\users\elitebook\documents\oop\petrolstation\driver.h
+	"PetrolPump.h"
+
+1587298348 source:c:\users\elitebook\documents\oop\petrolstation\driver.cpp
+	"Driver.h"
+
+1587298348 source:c:\users\elitebook\documents\oop\petrolstation\main.cpp
+	<iostream>
+	"PetrolPump.h"
+
+1587298348 source:c:\users\elitebook\documents\oop\petrolstation\petrolpump.cpp
+	"PetrolPump.h"
+
+1587298348 source:c:\users\elitebook\documents\oop\petrolstation\pump.cpp
+	"Pump.h"
+
+1587419638 c:\users\elitebook\documents\oop\petrolstation\pump.h
+	"PetrolPump.h"
+

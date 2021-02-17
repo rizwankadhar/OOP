@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1591954652 source:c:\users\elitebook\documents\oop\blackholes\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/maxsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+	"library/linsearch.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\blackholes\library\enumerator.hpp
+
+1547549200 c:\users\elitebook\documents\oop\blackholes\library\maxsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\blackholes\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1535999580 c:\users\elitebook\documents\oop\blackholes\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\blackholes\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\blackholes\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555578898 c:\users\elitebook\documents\oop\blackholes\library\linsearch.hpp
+	"procedure.hpp"
+

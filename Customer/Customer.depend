@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1586355133 source:c:\users\elitebook\documents\oop\customer\main.cpp
+	<iostream>
+
+1586355534 source:c:\users\elitebook\documents\oop\customer\infile.cpp
+	"infile.h"
+
+1586355299 c:\users\elitebook\documents\oop\customer\infile.h
+	<iostream>
+	<fstream>
+

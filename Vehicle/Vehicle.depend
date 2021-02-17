@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1514144174 source:c:\users\elitebook\documents\oop\vehicle\main.cpp
+	<iostream>
+
+1587667810 source:c:\users\elitebook\documents\oop\vehicle\product.cpp
+	"Product.h"
+
+1587745772 c:\users\elitebook\documents\oop\vehicle\product.h
+
+1587745848 source:c:\users\elitebook\documents\oop\vehicle\fueltank.cpp
+	"FuelTank.h"
+
+1587745772 c:\users\elitebook\documents\oop\vehicle\fueltank.h
+

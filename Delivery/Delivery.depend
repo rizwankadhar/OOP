@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1587746289 source:c:\users\elitebook\documents\oop\delivery\fueltank.cpp
+	"FuelTank.h"
+
+1588084952 c:\users\elitebook\documents\oop\delivery\fueltank.h
+
+1588085246 source:c:\users\elitebook\documents\oop\delivery\main.cpp
+	"Driver.h"
+
+1587746344 source:c:\users\elitebook\documents\oop\delivery\engine.cpp
+	"Engine.h"
+
+1588085164 c:\users\elitebook\documents\oop\delivery\engine.h
+
+1587747174 source:c:\users\elitebook\documents\oop\delivery\product.cpp
+	"Product.h"
+
+1588085048 c:\users\elitebook\documents\oop\delivery\product.h
+	<string>
+	<iostream>
+
+1588084434 source:c:\users\elitebook\documents\oop\delivery\vehicle.cpp
+	"Vehicle.h"
+
+1588084952 c:\users\elitebook\documents\oop\delivery\vehicle.h
+	<vector>
+	"Engine.h"
+	"FuelTank.h"
+	"Product.h"
+
+1588085058 source:c:\users\elitebook\documents\oop\delivery\driver.cpp
+	"Driver.h"
+	<iostream>
+	"Product.h"
+
+1588085164 c:\users\elitebook\documents\oop\delivery\driver.h
+	"Vehicle.h"
+

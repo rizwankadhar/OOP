@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1591655188 source:c:\users\elitebook\documents\oop\assortment\main.cpp
+	<iostream>
+	<string>
+	"library/seqinfileenumerator.hpp"
+	"library/summation.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\assortment\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\assortment\library\enumerator.hpp
+
+1588076210 c:\users\elitebook\documents\oop\assortment\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\assortment\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+

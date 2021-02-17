@@ -1,0 +1,4 @@
+James BigLakeChampionship Salmon 20 Sardine 5
+James LakeChampionship Tuna 50 Salmon 20 Sardine 5 Tuna 100
+James BigChampionship Tuna 50 Salmon 20 Sardine 5 Tuna 100
+James BigLakeChamp Salmon 20 Sardine 5 Tuna 78

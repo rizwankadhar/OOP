@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1590193107 source:c:\users\elitebook\documents\oop\assign2practice\onlytuna\main.cpp
+	<iostream>
+	"library/counting.hpp"
+	"library/enumerator.hpp"
+	"library/linsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+
+1537811350 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\counting.hpp
+	"summation.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\enumerator.hpp
+
+1555578898 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\linsearch.hpp
+	"procedure.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\assign2practice\onlytuna\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

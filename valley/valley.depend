@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1582668362 source:c:\users\elitebook\documents\oop\valley\main.cpp
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<vector>
+

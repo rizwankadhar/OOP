@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1590186953 source:c:\users\elitebook\documents\oop\assign2practice\sardineatall\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/linsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\enumerator.hpp
+
+1555578898 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\linsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1535999580 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\assign2practice\sardineatall\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+

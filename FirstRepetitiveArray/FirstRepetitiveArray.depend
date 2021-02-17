@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1591793691 source:c:\users\elitebook\documents\oop\firstrepetitivearray\main.cpp
+	<iostream>
+	"library/linsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/intervalenumerator.hpp"
+	"library/summation.hpp"
+
+1555578898 c:\users\elitebook\documents\oop\firstrepetitivearray\library\linsearch.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\firstrepetitivearray\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\firstrepetitivearray\library\enumerator.hpp
+
+1535999580 c:\users\elitebook\documents\oop\firstrepetitivearray\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1536086078 c:\users\elitebook\documents\oop\firstrepetitivearray\library\intervalenumerator.hpp
+	"enumerator.hpp"
+
+1587722838 c:\users\elitebook\documents\oop\firstrepetitivearray\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+

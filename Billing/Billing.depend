@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1586349362 source:c:\users\elitebook\documents\oop\billing\main.cpp
+	"infile.h"
+
+1586349565 source:c:\users\elitebook\documents\oop\billing\infile.cpp
+	"infile.h"
+
+1586349556 c:\users\elitebook\documents\oop\billing\infile.h
+	<fstream>
+	<iostream>
+

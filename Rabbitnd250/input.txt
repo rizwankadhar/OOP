@@ -1,0 +1,6 @@
+Rizwan 2Jan18 Deer 42
+Rizwan 7June19 Bear 67
+Hassan 2July18 Rabbit 205
+Hassan 3May18 Rabbit 56
+Ali 5Aug19 Rabbit 78
+Ali 4Nov19 Rabbit 190

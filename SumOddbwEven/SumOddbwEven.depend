@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1591803774 source:c:\users\elitebook\documents\oop\sumoddbweven\main.cpp
+	<iostream>
+	"library/seqinfileenumerator.hpp"
+	"library/selection.hpp"
+	"library/summation.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\sumoddbweven\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\sumoddbweven\library\enumerator.hpp
+
+1536086406 c:\users\elitebook\documents\oop\sumoddbweven\library\selection.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\sumoddbweven\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1587722838 c:\users\elitebook\documents\oop\sumoddbweven\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1583935648 source:c:\users\ullbqg\documents\tallmexican\main.cpp
+	<iostream>
+	"Infile.h"
+
+1583934088 source:c:\users\ullbqg\documents\tallmexican\infile.cpp
+	"Infile.h"
+	<stdlib.h>
+
+1583935209 c:\users\ullbqg\documents\tallmexican\infile.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+
+1583934088 source:c:\users\elitebook\documents\oop\tallmexican\infile.cpp
+	"Infile.h"
+	<stdlib.h>
+
+1583935209 c:\users\elitebook\documents\oop\tallmexican\infile.h
+	<iostream>
+	<fstream>
+	<stdlib.h>
+

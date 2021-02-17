@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1590179116 source:c:\users\elitebook\documents\oop\assign2practice\mostparticipants\main.cpp
+	<iostream>
+	"library/counting.hpp"
+	"library/enumerator.hpp"
+	"library/maxsearch.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+
+1537811350 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\counting.hpp
+	"summation.hpp"
+
+1588076210 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1555652084 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1502814430 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\enumerator.hpp
+
+1547549200 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\maxsearch.hpp
+	"procedure.hpp"
+
+1535999580 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937224 c:\users\elitebook\documents\oop\assign2practice\mostparticipants\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+

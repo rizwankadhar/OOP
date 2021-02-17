@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1593126988 source:c:\users\elitebook\documents\oop\3rdassign\ground.cpp
+	"Ground.h"
+	"Weather.h"
+
+1593126921 c:\users\elitebook\documents\oop\3rdassign\ground.h
+	"Weather.h"
+
+1593107957 c:\users\elitebook\documents\oop\3rdassign\weather.h
+	<string>
+
+1593109828 source:c:\users\elitebook\documents\oop\3rdassign\weather.cpp
+	"Weather.h"
+
+1593107772 source:c:\users\elitebook\documents\oop\3rdassign\main.cpp
+	<iostream>
+	<cstdlib>
+	<vector>
+	<fstream>
+	<sstream>
+	"Ground.h"
+	"Weather.h"
+

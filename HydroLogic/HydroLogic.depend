@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1588340742 source:c:\users\elitebook\documents\oop\hydrologic\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<vector>
+	"Weather.h"
+	"Area.h"
+
+1588338839 source:c:\users\elitebook\documents\oop\hydrologic\area.cpp
+	"Area.h"
+
+1588366936 c:\users\elitebook\documents\oop\hydrologic\area.h
+	"Weather.h"
+
+1588357065 c:\users\elitebook\documents\oop\hydrologic\weather.h
+	<string>
+
+1588339225 source:c:\users\elitebook\documents\oop\hydrologic\weather.cpp
+	"Weather.h"
+	"Area.h"
+

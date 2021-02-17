@@ -1,0 +1,4 @@
+Hassan SummerChampionship Sardine 50 Tuna 80
+Hassan BigLakeChampionship Salmon 20 Sardine 80
+Hassan BLChamp Salmon 40 Sardine 10 Salmon 30
+Ahmad BLChamp Salmon 40 Sardine 10 Salmon 30 Tuna 90

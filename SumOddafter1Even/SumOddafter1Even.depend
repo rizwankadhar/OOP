@@ -1,0 +1,33 @@
+# depslib dependency file v1.0
+1591801252 source:c:\users\elitebook\documents\oop\sumoddafter1even\main.cpp
+	<iostream>
+	"library/intervalenumerator.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/selection.hpp"
+	"library/summation.hpp"
+	"library/enumerator.hpp"
+
+1536086078 c:\users\elitebook\documents\oop\sumoddafter1even\library\intervalenumerator.hpp
+	"enumerator.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\sumoddafter1even\library\enumerator.hpp
+
+1535999580 c:\users\elitebook\documents\oop\sumoddafter1even\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1536086406 c:\users\elitebook\documents\oop\sumoddafter1even\library\selection.hpp
+	"procedure.hpp"
+
+1555652084 c:\users\elitebook\documents\oop\sumoddafter1even\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1588076210 c:\users\elitebook\documents\oop\sumoddafter1even\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+

@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1591976142 source:c:\users\elitebook\documents\oop\1aaa\finalexam\main.cpp
+	<iostream>
+	"library/enumerator.hpp"
+	"library/seqinfileenumerator.hpp"
+	"library/stringstreamenumerator.hpp"
+	"library/summation.hpp"
+	"library/counting.hpp"
+	"library/linsearch.hpp"
+
+1502814430 c:\users\elitebook\documents\oop\1aaa\finalexam\library\enumerator.hpp
+
+1560182796 c:\users\elitebook\documents\oop\1aaa\finalexam\library\seqinfileenumerator.hpp
+	<fstream>
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1554937222 c:\users\elitebook\documents\oop\1aaa\finalexam\library\stringstreamenumerator.hpp
+	<typeinfo>
+	<sstream>
+	"enumerator.hpp"
+
+1591716460 c:\users\elitebook\documents\oop\1aaa\finalexam\library\summation.hpp
+	"procedure.hpp"
+	<iostream>
+
+1586937966 c:\users\elitebook\documents\oop\1aaa\finalexam\library\procedure.hpp
+	<cstddef>
+	"enumerator.hpp"
+	<iostream>
+	<vector>
+
+1537811348 c:\users\elitebook\documents\oop\1aaa\finalexam\library\counting.hpp
+	"summation.hpp"
+
+1590769584 c:\users\elitebook\documents\oop\1aaa\finalexam\library\linsearch.hpp
+	"procedure.hpp"
+
